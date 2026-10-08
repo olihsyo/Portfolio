@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohammad Oli – Full Stack Developer portfolio showcasing projects, skills, experience, and blog articles." />
+  <title>Mohammad Oli | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── Navigation ─── -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">MO<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ─── -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">👋 Available for Work</div>
+      <h1 class="hero-title">Hi, I'm <span class="gradient-text">Mohammad Oli</span></h1>
+      <p class="hero-subtitle typed-text" id="typed-text"></p>
+      <p class="hero-desc">I craft beautiful, performant web experiences with clean code and thoughtful design. From pixel-perfect UIs to scalable back-end systems.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="view-work-btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline" id="contact-hero-btn">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span><p>Years Exp.</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number" data-target="40">0</span><span class="stat-plus">+</span><p>Projects</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span><p>Happy Clients</p></div>
+      </div>
+    </div>
+    <div class="hero-image-wrapper">
+      <div class="hero-image-ring"></div>
+      <div class="hero-image-ring ring-2"></div>
+      <img src="avatar.jpg" alt="Mohammad Oli" class="hero-avatar" id="hero-avatar" />
+      <div class="floating-badge badge-react" title="React">⚛️</div>
+      <div class="floating-badge badge-node" title="Node.js">🟢</div>
+      <div class="floating-badge badge-ts" title="TypeScript">🔷</div>
+    </div>
+  </section>
+
+  <!-- ─── About ─── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-image-card">
+            <img src="avatar.jpg" alt="Mohammad Oli" id="about-avatar" />
+            <div class="about-tag tag-location">📍 Patharghata, Barguna, Barishal</div>
+            <div class="about-tag tag-status">🟢 Open to Opportunities</div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="about-lead">I'm <strong>Mohammad Oli</strong>, a passionate Full Stack Developer with <strong>5+ years</strong> of experience building modern web applications.</p>
+          <p class="about-body">I specialize in crafting scalable, performant, and maintainable software. My work spans from crafting intuitive front-end interfaces to designing robust back-end architectures. I love solving hard problems and turning complex requirements into elegant solutions.</p>
+          <p class="about-body">When I'm not coding, you'll find me hiking, reading about distributed systems, or contributing to open source projects.</p>
+          <div class="about-facts">
+            <div class="fact-item"><span class="fact-icon">🎯</span><div><strong>Focus</strong><p>Full Stack & Cloud</p></div></div>
+            <div class="fact-item"><span class="fact-icon">☕</span><div><strong>Fuel</strong><p>Coffee & Curiosity</p></div></div>
+            <div class="fact-item"><span class="fact-icon">🌍</span><div><strong>Languages</strong><p>English, Bangla</p></div></div>
+            <div class="fact-item"><span class="fact-icon">🚀</span><div><strong>Goal</strong><p>Impactful Products</p></div></div>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary" id="about-contact-btn">Let's Talk</a>
+            <a href="#" class="btn btn-outline" id="download-cv-btn">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills ─── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category" id="skill-cat-frontend">
+          <h3 class="skill-cat-title"><span>🎨</span> Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">CSS / Sass</span>
+            <span class="skill-tag">Tailwind</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>React / Next.js</span><div class="bar-track"><div class="bar-fill" data-width="92"></div></div><span class="bar-pct">92%</span></div>
+            <div class="skill-bar-item"><span>TypeScript</span><div class="bar-track"><div class="bar-fill" data-width="88"></div></div><span class="bar-pct">88%</span></div>
+            <div class="skill-bar-item"><span>CSS / UI Design</span><div class="bar-track"><div class="bar-fill" data-width="85"></div></div><span class="bar-pct">85%</span></div>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-cat-backend">
+          <h3 class="skill-cat-title"><span>⚙️</span> Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>Node.js / Express</span><div class="bar-track"><div class="bar-fill" data-width="90"></div></div><span class="bar-pct">90%</span></div>
+            <div class="skill-bar-item"><span>Python / FastAPI</span><div class="bar-track"><div class="bar-fill" data-width="80"></div></div><span class="bar-pct">80%</span></div>
+            <div class="skill-bar-item"><span>GraphQL</span><div class="bar-track"><div class="bar-fill" data-width="75"></div></div><span class="bar-pct">75%</span></div>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-cat-devops">
+          <h3 class="skill-cat-title"><span>☁️</span> Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">GitHub Actions</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>AWS / Cloud</span><div class="bar-track"><div class="bar-fill" data-width="82"></div></div><span class="bar-pct">82%</span></div>
+            <div class="skill-bar-item"><span>Docker / K8s</span><div class="bar-track"><div class="bar-fill" data-width="78"></div></div><span class="bar-pct">78%</span></div>
+            <div class="skill-bar-item"><span>CI/CD Pipelines</span><div class="bar-track"><div class="bar-fill" data-width="85"></div></div><span class="bar-pct">85%</span></div>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-cat-db">
+          <h3 class="skill-cat-title"><span>🗄️</span> Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Prisma</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>PostgreSQL</span><div class="bar-track"><div class="bar-fill" data-width="88"></div></div><span class="bar-pct">88%</span></div>
+            <div class="skill-bar-item"><span>MongoDB</span><div class="bar-track"><div class="bar-fill" data-width="82"></div></div><span class="bar-pct">82%</span></div>
+            <div class="skill-bar-item"><span>Redis</span><div class="bar-track"><div class="bar-fill" data-width="70"></div></div><span class="bar-pct">70%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects ─── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="project-filters" id="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="api">API / Backend</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card" data-category="web" id="project-taskflow">
+          <div class="project-image">
+            <div class="project-img-placeholder img-blue"><span class="project-icon">📋</span></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" id="proj-taskflow-demo">Live Demo ↗</a>
+              <a href="#" class="project-link-btn" id="proj-taskflow-github">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-category">Web App</span><span class="project-year">2024</span></div>
+            <h3 class="project-title">TaskFlow</h3>
+            <p class="project-desc">A real-time collaborative project management tool with boards, sprints, and analytics. Supports 1000+ concurrent users.</p>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>Socket.io</span><span>PostgreSQL</span></div>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-category="web" id="project-shopwave">
+          <div class="project-featured-badge">⭐ Featured</div>
+          <div class="project-image">
+            <div class="project-img-placeholder img-purple"><span class="project-icon">🛍️</span></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" id="proj-shopwave-demo">Live Demo ↗</a>
+              <a href="#" class="project-link-btn" id="proj-shopwave-github">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-category">Web App</span><span class="project-year">2024</span></div>
+            <h3 class="project-title">ShopWave</h3>
+            <p class="project-desc">A full-featured e-commerce platform with AI-powered recommendations, real-time inventory, and Stripe payments.</p>
+            <div class="project-tech"><span>Next.js</span><span>Python</span><span>Redis</span><span>Stripe</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="api" id="project-datastream">
+          <div class="project-image">
+            <div class="project-img-placeholder img-green"><span class="project-icon">📡</span></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" id="proj-datastream-demo">Live Demo ↗</a>
+              <a href="#" class="project-link-btn" id="proj-datastream-github">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-category">API / Backend</span><span class="project-year">2023</span></div>
+            <h3 class="project-title">DataStream API</h3>
+            <p class="project-desc">A high-throughput REST & GraphQL API gateway processing 2M+ requests/day with rate limiting and caching.</p>
+            <div class="project-tech"><span>Node.js</span><span>GraphQL</span><span>Redis</span><span>AWS</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="mobile" id="project-fitnest">
+          <div class="project-image">
+            <div class="project-img-placeholder img-orange"><span class="project-icon">💪</span></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" id="proj-fitnest-demo">Live Demo ↗</a>
+              <a href="#" class="project-link-btn" id="proj-fitnest-github">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-category">Mobile</span><span class="project-year">2023</span></div>
+            <h3 class="project-title">FitNest</h3>
+            <p class="project-desc">A cross-platform fitness tracking app with workout plans, nutrition logging, and progress visualization.</p>
+            <div class="project-tech"><span>React Native</span><span>Expo</span><span>FastAPI</span><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" id="project-devboard">
+          <div class="project-image">
+            <div class="project-img-placeholder img-teal"><span class="project-icon">📊</span></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" id="proj-devboard-demo">Live Demo ↗</a>
+              <a href="#" class="project-link-btn" id="proj-devboard-github">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-category">Web App</span><span class="project-year">2022</span></div>
+            <h3 class="project-title">DevBoard</h3>
+            <p class="project-desc">A developer analytics dashboard aggregating GitHub, Jira, and CI/CD metrics into a unified view.</p>
+            <div class="project-tech"><span>Vue.js</span><span>D3.js</span><span>Express</span><span>PostgreSQL</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="api" id="project-authkit">
+          <div class="project-image">
+            <div class="project-img-placeholder img-pink"><span class="project-icon">🔐</span></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" id="proj-authkit-demo">Live Demo ↗</a>
+              <a href="#" class="project-link-btn" id="proj-authkit-github">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-category">API / Backend</span><span class="project-year">2022</span></div>
+            <h3 class="project-title">AuthKit</h3>
+            <p class="project-desc">An open-source authentication SDK with OAuth2, JWT, MFA, and social login out of the box. 800+ GitHub stars.</p>
+            <div class="project-tech"><span>Node.js</span><span>OAuth2</span><span>JWT</span><span>TypeScript</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Experience ─── -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Where I've Worked</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline" id="experience-timeline">
+        <div class="timeline-item" id="exp-current">
+          <div class="timeline-dot current"></div>
+          <div class="timeline-date">Jan 2023 – Present</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Senior Full Stack Developer</h3>
+                <p class="timeline-company">Stripe · San Francisco, CA</p>
+              </div>
+              <span class="timeline-badge current-badge">Current</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Led a team of 6 engineers to redesign the developer dashboard, reducing load times by 40%.</li>
+              <li>Architected a microservices migration reducing monolith complexity by 60%.</li>
+              <li>Shipped 12+ major features used by 500K+ developers worldwide.</li>
+            </ul>
+            <div class="timeline-tech"><span>React</span><span>Go</span><span>Kubernetes</span><span>AWS</span></div>
+          </div>
+        </div>
+        <div class="timeline-item" id="exp-vercel">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Mar 2021 – Dec 2022</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Full Stack Developer</h3>
+                <p class="timeline-company">Vercel · Remote</p>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built core features for the Vercel analytics product serving 1M+ deployments/month.</li>
+              <li>Improved CI/CD pipeline reliability from 94% to 99.8% uptime.</li>
+              <li>Mentored 3 junior developers through code reviews and pair programming.</li>
+            </ul>
+            <div class="timeline-tech"><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span></div>
+          </div>
+        </div>
+        <div class="timeline-item" id="exp-startup">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jun 2019 – Feb 2021</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Frontend Developer</h3>
+                <p class="timeline-company">TechStartup Inc · New York, NY</p>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built the company's core SaaS product from scratch using React and TypeScript.</li>
+              <li>Integrated Stripe payments, reducing checkout abandonment by 22%.</li>
+              <li>Implemented accessibility improvements achieving WCAG 2.1 AA compliance.</li>
+            </ul>
+            <div class="timeline-tech"><span>React</span><span>TypeScript</span><span>Stripe</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Education ─── -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Background</span>
+        <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="education-grid">
+        <div class="edu-card" id="edu-degree">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3>B.S. Computer Science</h3>
+            <p class="edu-school">UC Berkeley · 2015–2019</p>
+            <p class="edu-detail">Specialization in Software Engineering. GPA: 3.8/4.0. Dean's List all semesters.</p>
+          </div>
+        </div>
+        <div class="edu-card" id="edu-aws">
+          <div class="edu-icon">☁️</div>
+          <div class="edu-info">
+            <h3>AWS Certified Solutions Architect</h3>
+            <p class="edu-school">Amazon Web Services · 2022</p>
+            <p class="edu-detail">Associate-level certification for designing cloud architectures on AWS.</p>
+          </div>
+        </div>
+        <div class="edu-card" id="edu-gcp">
+          <div class="edu-icon">🔵</div>
+          <div class="edu-info">
+            <h3>Google Cloud Professional Developer</h3>
+            <p class="edu-school">Google Cloud · 2023</p>
+            <p class="edu-detail">Professional-level certification for building scalable applications on GCP.</p>
+          </div>
+        </div>
+        <div class="edu-card" id="edu-cka">
+          <div class="edu-icon">⚓</div>
+          <div class="edu-info">
+            <h3>Certified Kubernetes Administrator</h3>
+            <p class="edu-school">CNCF · 2023</p>
+            <p class="edu-detail">Hands-on certification for managing production Kubernetes clusters.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Testimonials ─── -->
+  <section id="testimonials" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What Others Say</span>
+        <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+      </div>
+      <div class="testimonials-carousel" id="testimonials-carousel">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card" id="testimonial-1">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Alex is an exceptional developer. He delivered our e-commerce platform on time, on budget, and beyond our expectations. The codebase is clean and maintainable."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div><strong>Sarah Mitchell</strong><p>CEO, ShopCo</p></div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="testimonial-2">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Working with Alex transformed our entire engineering culture. His technical leadership and mentoring helped our team ship 3x faster. Highly recommended!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JK</div>
+              <div><strong>James Kim</strong><p>CTO, DataPulse</p></div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="testimonial-3">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Alex rewrote our legacy system in 4 months what we thought would take a year. His problem-solving skills and attention to detail are genuinely world-class."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">LR</div>
+              <div><strong>Lisa Rodriguez</strong><p>Head of Engineering, Nexus Labs</p></div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="testimonial-4">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Alex doesn't just write code — he solves business problems. His full-stack expertise and clear communication made our collaboration truly outstanding."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MT</div>
+              <div><strong>Michael Torres</strong><p>Founder, BuildFast</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Previous">&#8249;</button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button class="carousel-btn" id="carousel-next" aria-label="Next">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Blog ─── -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Thoughts & Ideas</span>
+        <h2 class="section-title">Latest <span class="gradient-text">Articles</span></h2>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card featured-blog" id="blog-post-1">
+          <div class="blog-image img-blue"><span class="blog-icon">&#9889;</span><span class="blog-tag">Performance</span></div>
+          <div class="blog-info">
+            <div class="blog-meta"><span class="blog-date">Oct 2, 2024</span><span class="blog-read">8 min read</span></div>
+            <h3>How We Reduced React Bundle Size by 60% Without Sacrificing Features</h3>
+            <p>A deep dive into code splitting, lazy loading, and tree shaking techniques that transformed our app's performance.</p>
+            <a href="#" class="blog-read-link" id="blog-link-1">Read Article →</a>
+          </div>
+        </article>
+        <article class="blog-card" id="blog-post-2">
+          <div class="blog-image img-purple"><span class="blog-icon">🔐</span><span class="blog-tag">Security</span></div>
+          <div class="blog-info">
+            <div class="blog-meta"><span class="blog-date">Sep 14, 2024</span><span class="blog-read">6 min read</span></div>
+            <h3>JWT vs. Session Tokens: Which One Should You Actually Use?</h3>
+            <p>Breaking down the real-world trade-offs between JWT and server-side sessions for modern web apps.</p>
+            <a href="#" class="blog-read-link" id="blog-link-2">Read Article →</a>
+          </div>
+        </article>
+        <article class="blog-card" id="blog-post-3">
+          <div class="blog-image img-green"><span class="blog-icon">&#9729;&#65039;</span><span class="blog-tag">Cloud</span></div>
+          <div class="blog-info">
+            <div class="blog-meta"><span class="blog-date">Aug 28, 2024</span><span class="blog-read">10 min read</span></div>
+            <h3>Kubernetes vs ECS: Choosing the Right Container Orchestration</h3>
+            <p>An honest comparison of K8s and AWS ECS with real production benchmarks and cost analysis.</p>
+            <a href="#" class="blog-read-link" id="blog-link-3">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="section-footer">
+        <a href="#" class="btn btn-outline" id="view-all-posts-btn">View All Articles →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─── -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-item" id="contact-email-card" onclick="window.location='mailto:prianmuntasir@gmail.com'" style="cursor:pointer">
+            <div class="contact-icon">📧</div>
+            <div><strong>Email</strong><a href="mailto:prianmuntasir@gmail.com">prianmuntasir@gmail.com</a></div>
+          </div>
+          <div class="contact-item" id="contact-linkedin-card">
+            <div class="contact-icon">💼</div>
+            <div><strong>LinkedIn</strong><a href="#">Coming soon — stay tuned!</a></div>
+          </div>
+          <div class="contact-item" id="contact-github-card">
+            <div class="contact-icon">🐙</div>
+            <div><strong>GitHub</strong><a href="https://github.com/olihsyo/" target="_blank" rel="noopener">github.com/olihsyo</a></div>
+          </div>
+          <div class="contact-item" id="contact-twitter-card">
+            <div class="contact-icon">📍</div>
+            <div><strong>Location</strong><a href="#">Patharghata, Barguna, Barishal</a></div>
+          </div>
+          <div class="contact-availability">
+            <div class="avail-dot"></div>
+            <p>Currently available for freelance and full-time roles.</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email-input">Email</label>
+              <input type="email" id="contact-email-input" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-contact-btn">Send Message 🚀</button>
+          <p class="form-note" id="form-success" style="display:none;color:var(--primary);margin-top:1rem;text-align:center;font-weight:600;">✅ Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="nav-logo">MO<span class="dot">.</span></span>
+        <p>Building the web, one commit at a time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2024 Mohammad Oli. Crafted with ❤️</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top-btn" aria-label="Scroll to top">&#8593;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
